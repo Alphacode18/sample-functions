@@ -1,0 +1,196 @@
+aws-python-pynamodb-s3-sigurl/asset/delete.py:4:from log_cfg import logger
+aws-python-pynamodb-s3-sigurl/asset/delete.py:8:    logger.debug('event: {}'.format(event))
+aws-python-pynamodb-s3-sigurl/asset/update.py:5:from log_cfg import logger
+aws-python-pynamodb-s3-sigurl/asset/update.py:9:    logger.debug('event: {}'.format(event))
+aws-python-pynamodb-s3-sigurl/asset/bucket.py:5:from log_cfg import logger
+aws-python-pynamodb-s3-sigurl/asset/bucket.py:28:    logger.debug('event: {}'.format(event))
+aws-python-pynamodb-s3-sigurl/asset/create.py:4:from log_cfg import logger
+aws-python-pynamodb-s3-sigurl/asset/create.py:56:    logger.debug('event: {}'.format(event))
+aws-python-pynamodb-s3-sigurl/asset/get.py:5:from log_cfg import logger
+aws-python-pynamodb-s3-sigurl/asset/get.py:54:    logger.debug('event: {}'.format(event))
+aws-python-pynamodb-s3-sigurl/asset/asset_model.py:7:from log_cfg import logger
+aws-python-pynamodb-s3-sigurl/asset/asset_model.py:48:            logger.debug('saving: {}'.format(self))
+aws-python-pynamodb-s3-sigurl/asset/asset_model.py:51:            logger.error('save {} failed: {}'.format(self.asset_id, e), exc_info=True)
+aws-python-pynamodb-s3-sigurl/asset/asset_model.py:73:        logger.debug('upload URL: {}'.format(put_url))
+aws-python-pynamodb-s3-sigurl/asset/asset_model.py:97:        logger.debug('download URL: {}'.format(get_url))
+aws-python-pynamodb-s3-sigurl/asset/asset_model.py:105:        logger.debug('mark asset received: {}'.format(self.asset_id))
+aws-python-pynamodb-s3-sigurl/asset/asset_model.py:116:        logger.debug('mark asset uploaded: {}'.format(self.asset_id))
+aws-python-pynamodb-s3-sigurl/asset/asset_model.py:124:        logger.debug('mark asset deleted: {}'.format(self.asset_id))
+aws-python-pynamodb-s3-sigurl/asset/list.py:3:from log_cfg import logger
+aws-python-pynamodb-s3-sigurl/asset/list.py:7:    logger.debug('event: {}, context: {}'.format(event, context))
+aws-python-pynamodb-s3-sigurl/README.md:47:    from log_cfg import logger
+aws-python-pynamodb-s3-sigurl/log_cfg.py:8:logger = logging.getLogger()
+aws-python-pynamodb-s3-sigurl/log_cfg.py:9:for h in logger.handlers:
+aws-python-pynamodb-s3-sigurl/log_cfg.py:10:    logger.removeHandler(h)
+aws-python-pynamodb-s3-sigurl/log_cfg.py:15:logger.addHandler(h)
+aws-python-pynamodb-s3-sigurl/log_cfg.py:16:logger.setLevel(logging.DEBUG)
+aws-python-pynamodb-s3-sigurl/log_cfg.py:18:logging.getLogger('__main__').setLevel(logging.DEBUG)
+aws-python-pynamodb-s3-sigurl/log_cfg.py:19:logging.getLogger('botocore').setLevel(logging.WARN)
+aws-python-pynamodb-s3-sigurl/log_cfg.py:20:logging.getLogger('pynamodb').setLevel(logging.INFO)
+aws-ruby-step-functions/src/common/adapters/dynamo_db_adapter.rb:4:require 'logger'
+aws-ruby-step-functions/src/common/adapters/dynamo_db_adapter.rb:14:    logger.info("Created dynamoDB item with id=#{item[:id]}")
+aws-ruby-step-functions/src/common/adapters/dynamo_db_adapter.rb:16:    logger.error(error)
+aws-ruby-step-functions/src/common/adapters/dynamo_db_adapter.rb:21:    logger.info("Updated dynamoDB item with id=#{item_id}")
+aws-ruby-step-functions/src/common/adapters/dynamo_db_adapter.rb:23:    logger.error(error)
+aws-ruby-step-functions/src/common/adapters/dynamo_db_adapter.rb:28:  def logger
+aws-ruby-step-functions/src/common/adapters/dynamo_db_adapter.rb:29:    @logger ||= Logger.new($stdout)
+aws-ruby-step-functions/package-lock.json:5062:    "node_modules/noop-logger": {
+aws-ruby-step-functions/package-lock.json:5064:      "resolved": "https://registry.npmjs.org/noop-logger/-/noop-logger-0.1.1.tgz",
+aws-ruby-step-functions/package-lock.json:5746:        "noop-logger": "^0.1.1",
+aws-ruby-step-functions/package-lock.json:12678:    "noop-logger": {
+aws-ruby-step-functions/package-lock.json:12680:      "resolved": "https://registry.npmjs.org/noop-logger/-/noop-logger-0.1.1.tgz",
+aws-ruby-step-functions/package-lock.json:13216:        "noop-logger": "^0.1.1",
+aws-ruby-cron-with-dynamodb/src/common/adapters/dynamo_db_adapter.rb:4:require 'logger'
+aws-ruby-cron-with-dynamodb/src/common/adapters/dynamo_db_adapter.rb:14:    logger.info("Created dynamoDB item with id=#{item[:id]}")
+aws-ruby-cron-with-dynamodb/src/common/adapters/dynamo_db_adapter.rb:16:    logger.error(error)
+aws-ruby-cron-with-dynamodb/src/common/adapters/dynamo_db_adapter.rb:21:  def logger
+aws-ruby-cron-with-dynamodb/src/common/adapters/dynamo_db_adapter.rb:22:    @logger ||= Logger.new($stdout)
+aws-ruby-cron-with-dynamodb/package-lock.json:4707:    "node_modules/noop-logger": {
+aws-ruby-cron-with-dynamodb/package-lock.json:4709:      "resolved": "https://registry.npmjs.org/noop-logger/-/noop-logger-0.1.1.tgz",
+aws-ruby-cron-with-dynamodb/package-lock.json:5277:        "noop-logger": "^0.1.1",
+aws-ruby-cron-with-dynamodb/package-lock.json:11736:    "noop-logger": {
+aws-ruby-cron-with-dynamodb/package-lock.json:11738:      "resolved": "https://registry.npmjs.org/noop-logger/-/noop-logger-0.1.1.tgz",
+aws-ruby-cron-with-dynamodb/package-lock.json:12193:        "noop-logger": "^0.1.1",
+aws-node-puppeteer/yarn.lock:468:    lighthouse-logger "^1.0.0"
+aws-node-puppeteer/yarn.lock:1097:lighthouse-logger@^1.0.0:
+aws-node-puppeteer/yarn.lock:1099:  resolved "https://registry.yarnpkg.com/lighthouse-logger/-/lighthouse-logger-1.2.0.tgz#b76d56935e9c137e86a04741f6bb9b2776e886ca"
+aws-node-puppeteer/package-lock.json:359:        "lighthouse-logger": "^1.0.0",
+aws-node-puppeteer/package-lock.json:960:    "lighthouse-logger": {
+aws-node-puppeteer/package-lock.json:962:      "resolved": "https://registry.npmjs.org/lighthouse-logger/-/lighthouse-logger-1.2.0.tgz",
+aws-node-oauth-dropbox-api/package-lock.json:2260:        "lighthouse-logger": "^1.0.0",
+aws-node-oauth-dropbox-api/package-lock.json:4759:    "lighthouse-logger": {
+aws-node-oauth-dropbox-api/package-lock.json:4761:      "resolved": "https://registry.npmjs.org/lighthouse-logger/-/lighthouse-logger-1.0.1.tgz",
+aws-ruby-step-functions-with-callback/src/common/adapters/step_functions_adapter.rb:4:require 'logger'
+aws-ruby-step-functions-with-callback/src/common/adapters/step_functions_adapter.rb:18:    logger.info('Success task')
+aws-ruby-step-functions-with-callback/src/common/adapters/step_functions_adapter.rb:23:    logger.info('Failed task')
+aws-ruby-step-functions-with-callback/src/common/adapters/step_functions_adapter.rb:42:  def logger
+aws-ruby-step-functions-with-callback/src/common/adapters/step_functions_adapter.rb:43:    @logger ||= Logger.new($stdout)
+aws-python-scheduled-cron/handler.py:4:logger = logging.getLogger(__name__)
+aws-python-scheduled-cron/handler.py:5:logger.setLevel(logging.INFO)
+aws-python-scheduled-cron/handler.py:11:    logger.info("Your cron function " + name + " ran at " + str(current_time))
+aws-node-typescript-nest/package-lock.json:2636:    "bs-logger": {
+aws-node-typescript-nest/package-lock.json:2638:      "resolved": "https://registry.npmjs.org/bs-logger/-/bs-logger-0.2.6.tgz",
+aws-node-typescript-nest/package-lock.json:10312:        "bs-logger": "0.x",
+legacy/google-nodejs-typescript/src/libs/error-handler.ts:2:import { logger } from '@libs/logs';
+legacy/google-nodejs-typescript/src/libs/error-handler.ts:9:  logger.init(req);
+legacy/google-nodejs-typescript/src/libs/error-handler.ts:13:    logger.error(error);
+legacy/google-nodejs-typescript/src/libs/error-handler.ts:27:    logger.error(error);
+legacy/google-nodejs-typescript/src/libs/logs.ts:22:class Logger {
+legacy/google-nodejs-typescript/src/libs/logs.ts:72:export const logger = new Logger();
+legacy/google-nodejs-typescript/src/functions/http-hello/handler.ts:2:import { logger } from '@libs/logs';
+legacy/google-nodejs-typescript/src/functions/http-hello/handler.ts:14:  logger.log({ message });
+legacy/google-nodejs-typescript/src/functions/event-hello/handler.ts:1:import { logger } from '@libs/logs';
+legacy/google-nodejs-typescript/src/functions/event-hello/handler.ts:10:  logger.log({ message });
+legacy/aws-kotlin-jvm-gradle/src/main/resources/log4j2.xml:10:    <Loggers>
+legacy/aws-kotlin-jvm-gradle/src/main/resources/log4j2.xml:14:    </Loggers>
+legacy/aws-kotlin-jvm-gradle/src/main/kotlin/com/serverless/ApiGatewayResponse.kt:6:import org.apache.logging.log4j.Logger;
+legacy/aws-kotlin-jvm-gradle/src/main/kotlin/com/serverless/ApiGatewayResponse.kt:22:    var LOG: Logger = LogManager.getLogger(ApiGatewayResponse.Builder::class.java)
+legacy/aws-kotlin-jvm-gradle/src/main/kotlin/com/serverless/Handler.kt:19:    private val LOG = LogManager.getLogger(Handler::class.java)
+legacy/aws-clojure-gradle/src/main/resources/log4j.properties:2:log4j.rootLogger=LAMBDA
+legacy/aws-groovy-gradle/src/main/resources/log4j.properties:2:log4j.rootLogger = DEBUG, LAMBDA
+legacy/aws-groovy-gradle/src/main/groovy/com/serverless/Handler.groovy:6:import org.apache.log4j.Logger
+legacy/aws-groovy-gradle/src/main/groovy/com/serverless/Handler.groovy:11:  private static final Logger LOG = Logger.getLogger(Handler.class)
+legacy/aws-scala-sbt/src/main/resources/log4j2.xml:10:    <Loggers>
+legacy/aws-scala-sbt/src/main/resources/log4j2.xml:14:    </Loggers>
+legacy/aws-scala-sbt/src/main/scala/hello/Handler.scala:4:import org.apache.logging.log4j.{LogManager, Logger}
+legacy/aws-scala-sbt/src/main/scala/hello/Handler.scala:10:  val logger: Logger = LogManager.getLogger(getClass)
+legacy/aws-scala-sbt/src/main/scala/hello/Handler.scala:13:    logger.info(s"Received a request: $input")
+legacy/aws-kotlin-jvm-gradle-kts/src/main/resources/log4j2.xml:10:    <Loggers>
+legacy/aws-kotlin-jvm-gradle-kts/src/main/resources/log4j2.xml:14:    </Loggers>
+legacy/aws-kotlin-jvm-gradle-kts/src/main/kotlin/com/serverless/Handler.kt:19:    private val LOG = LogManager.getLogger(Handler::class.java)
+legacy/aws-kotlin-jvm-gradle-kts/src/main/kotlin/com/serverless/ApiGatewayResponse.kt:6:import org.apache.logging.log4j.Logger;
+legacy/aws-kotlin-jvm-gradle-kts/src/main/kotlin/com/serverless/ApiGatewayResponse.kt:22:    var LOG: Logger = LogManager.getLogger(ApiGatewayResponse.Builder::class.java)
+legacy/aws-kotlin-jvm-maven/src/main/resources/log4j2.xml:10:    <Loggers>
+legacy/aws-kotlin-jvm-maven/src/main/resources/log4j2.xml:14:    </Loggers>
+legacy/aws-kotlin-jvm-maven/src/main/kotlin/com/serverless/ApiGatewayResponse.kt:6:import org.apache.logging.log4j.Logger
+legacy/aws-kotlin-jvm-maven/src/main/kotlin/com/serverless/ApiGatewayResponse.kt:28:        var LOG: Logger = LogManager.getLogger(ApiGatewayResponse.Builder::class.java)
+legacy/aws-kotlin-jvm-maven/src/main/kotlin/com/serverless/Handler.kt:20:        private val LOG = LogManager.getLogger(Handler::class.java)
+legacy/aws-java-maven/src/main/resources/log4j2.xml:10:  <Loggers>
+legacy/aws-java-maven/src/main/resources/log4j2.xml:14:  </Loggers>
+legacy/aws-java-maven/src/main/java/com/serverless/Handler.java:7:import org.apache.logging.log4j.Logger;
+legacy/aws-java-maven/src/main/java/com/serverless/Handler.java:14:	private static final Logger LOG = LogManager.getLogger(Handler.class);
+legacy/aws-java-maven/src/main/java/com/serverless/ApiGatewayResponse.java:9:import org.apache.logging.log4j.Logger;
+legacy/aws-java-maven/src/main/java/com/serverless/ApiGatewayResponse.java:51:		private static final Logger LOG = LogManager.getLogger(ApiGatewayResponse.Builder.class);
+legacy/azure-csharp/hello.cs:18:            ILogger log)
+legacy/azure-csharp/goodbye.cs:18:            ILogger log)
+legacy/twilio-nodejs/package-lock.json:1740:        "bs-logger": {
+legacy/twilio-nodejs/package-lock.json:1742:          "resolved": "https://registry.npmjs.org/bs-logger/-/bs-logger-0.2.6.tgz",
+legacy/twilio-nodejs/package-lock.json:9707:            "bs-logger": "0.x",
+legacy/aws-java-gradle/src/main/resources/log4j.properties:2:log4j.rootLogger = DEBUG, LAMBDA
+legacy/aws-java-gradle/src/main/java/com/serverless/Handler.java:6:import org.apache.log4j.Logger;
+legacy/aws-java-gradle/src/main/java/com/serverless/Handler.java:13:	private static final Logger LOG = Logger.getLogger(Handler.class);
+legacy/aws-java-gradle/src/main/java/com/serverless/ApiGatewayResponse.java:8:import org.apache.log4j.Logger;
+legacy/aws-java-gradle/src/main/java/com/serverless/ApiGatewayResponse.java:50:		private static final Logger LOG = Logger.getLogger(ApiGatewayResponse.Builder.class);
+twilio-node-forward-call/package-lock.json:1748:        "bs-logger": {
+twilio-node-forward-call/package-lock.json:1750:          "resolved": "https://registry.npmjs.org/bs-logger/-/bs-logger-0.2.6.tgz",
+twilio-node-forward-call/package-lock.json:9737:            "bs-logger": "0.x",
+aws-node-dynamic-image-resizer/yarn.lock:5559:noop-logger@^0.1.1:
+aws-node-dynamic-image-resizer/yarn.lock:5561:  resolved "https://registry.yarnpkg.com/noop-logger/-/noop-logger-0.1.1.tgz#94a2b1633c4f1317553007d8966fd0e841b6a4c2"
+aws-node-dynamic-image-resizer/yarn.lock:6064:    noop-logger "^0.1.1"
+aws-ruby-step-functions-express/src/common/adapters/ses_adapter.rb:4:require 'logger'
+aws-ruby-step-functions-express/src/common/adapters/ses_adapter.rb:14:    logger.info('Email was sent')
+aws-ruby-step-functions-express/src/common/adapters/ses_adapter.rb:16:    logger.error(error)
+aws-ruby-step-functions-express/src/common/adapters/ses_adapter.rb:62:  def logger
+aws-ruby-step-functions-express/src/common/adapters/ses_adapter.rb:63:    @logger ||= Logger.new($stdout)
+aws-ruby-step-functions-express/package-lock.json:5850:    "node_modules/noop-logger": {
+aws-ruby-step-functions-express/package-lock.json:5852:      "resolved": "https://registry.npmjs.org/noop-logger/-/noop-logger-0.1.1.tgz",
+aws-ruby-step-functions-express/package-lock.json:6499:        "noop-logger": "^0.1.1",
+aws-ruby-step-functions-express/package-lock.json:13429:    "noop-logger": {
+aws-ruby-step-functions-express/package-lock.json:13431:      "resolved": "https://registry.npmjs.org/noop-logger/-/noop-logger-0.1.1.tgz",
+aws-ruby-step-functions-express/package-lock.json:13932:        "noop-logger": "^0.1.1",
+aws-python-telegram-bot/handler.py:8:logger = logging.getLogger()
+aws-python-telegram-bot/handler.py:9:if logger.handlers:
+aws-python-telegram-bot/handler.py:10:    for handler in logger.handlers:
+aws-python-telegram-bot/handler.py:11:        logger.removeHandler(handler)
+aws-python-telegram-bot/handler.py:34:        logger.error('The TELEGRAM_TOKEN must be set')
+aws-python-telegram-bot/handler.py:46:    logger.info('Event: {}'.format(event))
+aws-python-telegram-bot/handler.py:49:        logger.info('Message received')
+aws-python-telegram-bot/handler.py:60:        logger.info('Message sent')
+aws-python-telegram-bot/handler.py:72:    logger.info('Event: {}'.format(event))
+aws-ruby-sqs-with-dynamodb/package-lock.json:5585:    "node_modules/noop-logger": {
+aws-ruby-sqs-with-dynamodb/package-lock.json:5587:      "resolved": "https://registry.npmjs.org/noop-logger/-/noop-logger-0.1.1.tgz",
+aws-ruby-sqs-with-dynamodb/package-lock.json:6233:        "noop-logger": "^0.1.1",
+aws-ruby-sqs-with-dynamodb/package-lock.json:12842:    "noop-logger": {
+aws-ruby-sqs-with-dynamodb/package-lock.json:12844:      "resolved": "https://registry.npmjs.org/noop-logger/-/noop-logger-0.1.1.tgz",
+aws-ruby-sqs-with-dynamodb/package-lock.json:13353:        "noop-logger": "^0.1.1",
+aws-ruby-sqs-with-dynamodb/src/common/adapters/dynamo_db_adapter.rb:4:require 'logger'
+aws-ruby-sqs-with-dynamodb/src/common/adapters/dynamo_db_adapter.rb:14:    logger.info("Created dynamoDB item with id=#{item[:id]}")
+aws-ruby-sqs-with-dynamodb/src/common/adapters/dynamo_db_adapter.rb:16:    logger.error(error)
+aws-ruby-sqs-with-dynamodb/src/common/adapters/dynamo_db_adapter.rb:21:  def logger
+aws-ruby-sqs-with-dynamodb/src/common/adapters/dynamo_db_adapter.rb:22:    @logger ||= Logger.new($stdout)
+aws-ruby-sqs-with-dynamodb/src/common/adapters/sqs_adapter.rb:4:require 'logger'
+aws-ruby-sqs-with-dynamodb/src/common/adapters/sqs_adapter.rb:17:    logger.info('Created SQS message')
+aws-ruby-sqs-with-dynamodb/src/common/adapters/sqs_adapter.rb:19:    logger.error(error)
+aws-ruby-sqs-with-dynamodb/src/common/adapters/sqs_adapter.rb:26:  def logger
+aws-ruby-sqs-with-dynamodb/src/common/adapters/sqs_adapter.rb:27:    @logger ||= Logger.new($stdout)
+aws-python-sqs-worker/handler.py:7:logger = logging.getLogger()
+aws-python-sqs-worker/handler.py:8:logger.setLevel(logging.DEBUG)
+aws-python-sqs-worker/handler.py:32:        logger.exception('Sending message to SQS queue failed!')
+aws-python-sqs-worker/handler.py:41:        logger.info(f'Message body: {record["body"]}')
+aws-python-sqs-worker/handler.py:42:        logger.info(
+azure-node-typescript-servicebus-trigger-endpoint/src/config/loggerConfig.ts:4:const rootLogger = winston.createLogger({
+azure-node-typescript-servicebus-trigger-endpoint/src/config/loggerConfig.ts:19:const logger = (name: string): winston.Logger => {
+azure-node-typescript-servicebus-trigger-endpoint/src/config/loggerConfig.ts:20:    return rootLogger.child({ source: path.relative(process.cwd(), name) });
+azure-node-typescript-servicebus-trigger-endpoint/src/config/loggerConfig.ts:23:export default logger;
+azure-node-typescript-servicebus-trigger-endpoint/src/controller/messageSenderController.ts:3:import log from '../config/loggerConfig';
+azure-node-typescript-servicebus-trigger-endpoint/src/controller/messageSenderController.ts:5:const logger = log(__filename);
+azure-node-typescript-servicebus-trigger-endpoint/src/controller/messageSenderController.ts:12:        logger.info(`Request arrived in controller with body ${event.rawBody}`);
+azure-node-typescript-servicebus-trigger-endpoint/src/controller/messageSenderController.ts:19:        logger.error(`Error occured while sending message to service bus`)
+azure-node-typescript-servicebus-trigger-endpoint/src/controller/triggerFunctionController.ts:3:import log from '../config/loggerConfig';
+azure-node-typescript-servicebus-trigger-endpoint/src/controller/triggerFunctionController.ts:4:const logger = log(__filename);
+azure-node-typescript-servicebus-trigger-endpoint/src/controller/triggerFunctionController.ts:7:    logger.info(
+azure-node-typescript-servicebus-trigger-endpoint/src/service/serviceBusMessageSender.ts:3:import log from '../config/loggerConfig';
+azure-node-typescript-servicebus-trigger-endpoint/src/service/serviceBusMessageSender.ts:4:const logger = log(__filename);
+azure-node-typescript-servicebus-trigger-endpoint/src/service/serviceBusMessageSender.ts:15:            logger.debug(`Message has been sent successfuly. Message is ${message}`);
+azure-node-typescript-servicebus-trigger-endpoint/src/service/serviceBusMessageSender.ts:17:            logger.error(`Exception occurred during sending notification. Exception is ${err}`);
+azure-node-typescript-servicebus-trigger-endpoint/package-lock.json:206:                "@azure/logger": "^1.0.0",
+azure-node-typescript-servicebus-trigger-endpoint/package-lock.json:249:        "@azure/logger": {
+azure-node-typescript-servicebus-trigger-endpoint/package-lock.json:251:            "resolved": "https://registry.npmjs.org/@azure/logger/-/logger-1.0.0.tgz",
+azure-node-typescript-servicebus-trigger-endpoint/package-lock.json:2520:        "bs-logger": {
+azure-node-typescript-servicebus-trigger-endpoint/package-lock.json:2522:            "resolved": "https://registry.npmjs.org/bs-logger/-/bs-logger-0.2.6.tgz",
+azure-node-typescript-servicebus-trigger-endpoint/package-lock.json:8822:                "bs-logger": "0.x",
+aws-java-simple-http-endpoint/src/main/resources/log4j.properties:2:log4j.rootLogger = DEBUG, LAMBDA
+aws-java-simple-http-endpoint/src/main/java/com/serverless/Handler.java:7:import org.apache.log4j.Logger;
+aws-java-simple-http-endpoint/src/main/java/com/serverless/Handler.java:14:	private static final Logger LOG = Logger.getLogger(Handler.class);
+aws-java-simple-http-endpoint/src/main/java/com/serverless/ApiGatewayResponse.java:8:import org.apache.log4j.Logger;
+aws-java-simple-http-endpoint/src/main/java/com/serverless/ApiGatewayResponse.java:50:		private static final Logger LOG = Logger.getLogger(ApiGatewayResponse.Builder.class);
